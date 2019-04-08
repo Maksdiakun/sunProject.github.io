@@ -1,5 +1,4 @@
-@import url(reset.css);
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url(reset.css); @import url('https://fonts.googleapis.com/css?family=Roboto');
 :root{
 	--green:#8AAD3F;
 	--grey:#F2F2F2;
@@ -41,13 +40,15 @@ font-size: 70px;
 }
 .header-btn{
 	position: absolute;
-width: 150px;
-height: 70px;
-left: 0px;
-bottom: 0px;
-background: linear-gradient(180deg, #161616 0%, #272728 100%);
-text-align: center;
-line-height: 70px;
+	width: 150px;
+	height: 70px;
+	left: 0px;
+	bottom: 0px;
+	background: linear-gradient(180deg, #161616 0%, #272728 100%);
+	text-align: center;
+	line-height: 70px;
+	font-size: 40px;
+	color: #525151;
 
 }
 .header-btn i { 
@@ -441,6 +442,13 @@ img{
 	text-align: center;
 	width: auto;
 }
+.home-footer{
+	height: 100px;
+	padding-top: 45px;
+}
+.header-btn{
+	display: none;
+}
 }
 @media(max-width:600px) {
 .reports img{
@@ -671,4 +679,14 @@ header > .container{
 	}
 	
 }
+@keyframes jump { 0% { top: 0; } 50% { top: 20px; } 100% { top: 0; } }
 
+
+
+#arrow-down { position: relative;
+ margin: 0 auto;
+  text-align: center;
+   animation: jump 5s infinite;
+  i { content: '\f0a8'; font-family: 'FontAwesome'; font-size: 80px; }
+  i:hover { color: #FFAAAA; }
+}
